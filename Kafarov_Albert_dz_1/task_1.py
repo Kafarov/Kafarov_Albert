@@ -20,13 +20,13 @@ for item in duration:
     elif item <day:
         hours = item // hour
         minutes = item % hour // minute
-        sec = item % hour % minute
+        sec = item % minute
         print(hours, 'часов', minutes, 'минут', sec, 'сек')
     else:
         days = item // day
         hours = item % day // hour
         minutes = item % day % hour // minute
-        sec = item % day % hour % minute
+        sec = item % minute
         print(days, 'днеей', hours, 'часов', minutes, 'минут', sec, 'сек')
 
     # сделал вплоть до лет если нужно раскомментировать удалите вышестоящий блок else
