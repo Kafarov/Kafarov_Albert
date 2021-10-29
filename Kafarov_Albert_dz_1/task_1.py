@@ -22,43 +22,34 @@ for item in duration:
         minutes = item % hour // minute
         sec = item % minute
         print(hours, 'часов', minutes, 'минут', sec, 'сек')
-    else:
+    elif item < week:
         days = item // day
         hours = item % day // hour
         minutes = item % day % hour // minute
         sec = item % minute
         print(days, 'днеей', hours, 'часов', minutes, 'минут', sec, 'сек')
-
-    # сделал вплоть до лет если нужно раскомментировать удалите вышестоящий блок else
-
-    # elif item < week:
-    #     days = item // day
-    #     hours = item % day // hour
-    #     minutes = item % day % hour // minute
-    #     sec = item % day % hour % minute
-    #     print(days, 'днеей', hours, 'часов', minutes, 'минут', sec, 'сек')
-    # elif item <month:
-    #     weeks = item // week
-    #     days = item % week // day
-    #     hours = item % week % day // hour
-    #     minutes = item % week % day % hour // minute
-    #     sec = item % week % day % hour % minute
-    #     print(weeks, 'недель', days, 'днеей', hours, 'часов', minutes, 'минут', sec, 'сек')
-    # elif item < year:
-    #     months = item // month
-    #     weeks = item % month // week
-    #     days = item % month % week // day
-    #     hours = item % month % week % day // hour
-    #     minutes = item % month % week % day % hour // minute
-    #     sec = item % month % week % day % hour % minute
-    #     print(months, 'месяцев', weeks, 'недель', days, 'днеей', hours, 'часов', minutes, 'минут', sec, 'сек')
-    # else:
-    #     years = item // year
-    #     months = item % year // month
-    #     weeks = item % year % month //week
-    #     days = item % year % month % week // day
-    #     hours = item % year % month % week // day
-    #     minutes = item % year % month % week % day // minute
-    #     sec = item % year % month % week % day % minutes
-    #     print(years, 'лет', months, 'месяцев', weeks, 'недель', days, 'днеей', hours, 'часов', minutes, 'минут', sec, 'сек')
+    elif item <month:
+        weeks = item // week
+        days = item % week // day
+        hours = item % week % day // hour
+        minutes = item % week % day % hour // minute
+        sec = item % minute
+        print(weeks, 'недель', days, 'днеей', hours, 'часов', minutes, 'минут', sec, 'сек')
+    elif item < year:
+        months = item // month
+        weeks = item % month // week
+        days = item % month % week // day
+        hours = item % month % week % day // hour
+        minutes = item % month % week % day % hour // minute
+        sec = item % minute
+        print(months, 'месяцев', weeks, 'недель', days, 'днеей', hours, 'часов', minutes, 'минут', sec, 'сек')
+    else:
+        years = item // year
+        months = item % year // month
+        weeks = item % year % month //week
+        days = item % year % month % week // day
+        hours = item % year % month % week // hour
+        minutes = item % year % month % week % day // minute
+        sec = item % minutes
+        print(years, 'лет', months, 'месяцев', weeks, 'недель', days, 'днеей', hours, 'часов', minutes, 'минут', sec, 'сек')
      
