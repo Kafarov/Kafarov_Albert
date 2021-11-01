@@ -13,7 +13,7 @@ month = 2629743
 year = 31556926
 
 for item in duration:
-    if item < minute:
+    if item<minute:
         print(item, 'sec')
     elif item < hour:
         print(item // minute, 'минут', item % minute, 'sec')
