@@ -10,7 +10,7 @@ def show_sales(*args):
         else:
             data = pd.read_csv(bakery, skiprows=args[0])
             print(data)
-            
+
 
 i = tuple(int(i) for i in sys.argv[1:])
 

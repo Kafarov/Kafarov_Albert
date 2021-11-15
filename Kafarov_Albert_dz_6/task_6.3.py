@@ -11,9 +11,10 @@ with open('Kafarov_Albert_dz_6/users.csv', 'r', encoding='utf-8') as users:
                 sys.exit(1)
             users.seek(0)
             hobby.seek(0)
-            u_h = {' '.join(i) : j for i, j in zip_longest(csv.reader(users), csv.reader(hobby), fillvalue=None)}
+            u_h = {' '.join(i): j for i, j in zip_longest(
+                csv.reader(users), csv.reader(hobby), fillvalue=None)}
             json.dump(u_h, users_hobby, ensure_ascii=False)
-            
-            
+
+
 with open('Kafarov_Albert_dz_6/users_hobby.json', 'r', encoding='utf-8') as users_hobby:
     print(json.load(users_hobby))
