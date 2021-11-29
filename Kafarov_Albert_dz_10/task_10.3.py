@@ -10,7 +10,7 @@ class Cell:
             else:
                 return super().__new__(cls)
         except AttributeError:
-            print('Клетка не жизнеспособна')
+            AttributeError()
 
     def __init__(self, integer):
         self.integer = int(integer)
